@@ -6,5 +6,29 @@
 </head>
 <body>
 
+<form method="post" action="#">
+    <label>Input anything:</label>
+    <input type="text" name="input">
+    <button type="button">Submit</button>
+</form>
+
+<script>
+
+    let a = {};
+    let input = [-1, 5, "cat", false, 10.2, true, "dog", "bear", 55, a, {first: 'Bob', last: 'Jones'}, null];
+    let result = convert(input);
+
+    function convert(arr) {
+
+        obj = {};
+
+        for (var i = 0; i < arr.length; i++) {
+
+            let val = arr[i];
+            let type = typeof(val) + "s";
+
+        }
+    }
+</script>
 </body>
 </html>
